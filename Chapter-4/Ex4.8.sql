@@ -1,7 +1,9 @@
 SELECT VendorName, VendorState
 from Vendors
 where VendorState = 'CA'
+
 UNION
+
 SELECT VendorName, 'Outside CA'
 from Vendors
 where VendorState != 'CA'

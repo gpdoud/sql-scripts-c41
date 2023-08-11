@@ -3,3 +3,4 @@ from Vendors v
 join GLAccounts g
     on v.DefaultAccountNo = g.AccountNo
 order by g.AccountDescription, v.VendorName
+
