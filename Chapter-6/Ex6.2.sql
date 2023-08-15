@@ -3,5 +3,5 @@ from Invoices
 where PaymentTotal > (
     SELECT avg(PaymentTotal)
     from Invoices
-    where InvoiceTotal - PaymentTotal - CreditTotal = 0
+    where InvoiceTotal - PaymentTotal - CreditTotal <= 0
 )
